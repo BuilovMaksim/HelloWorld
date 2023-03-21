@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,42 +14,34 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="QMy-38-u2a">
-                                <rect key="frame" x="132.66666666666666" y="78.999999999999972" width="127.66666666666666" height="432.33333333333326"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="sZX-SC-nSw">
+                                <rect key="frame" x="137.5" y="65" width="100" height="360"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-Wr-KBH">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="127.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="3aS-Wr-KBH" secondAttribute="height" multiplier="1:1" id="VdH-up-Aoa"/>
+                                            <constraint firstAttribute="width" secondItem="3aS-Wr-KBH" secondAttribute="height" multiplier="1:1" id="gWO-1c-P8q"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2A2-43-Irb">
-                                        <rect key="frame" x="0.0" y="152.33333333333334" width="127.66666666666667" height="127.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="130" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="2A2-43-Irb" secondAttribute="height" multiplier="1:1" id="w0C-2S-VJB"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aP-2K-8lJ">
-                                        <rect key="frame" x="0.0" y="305" width="127.66666666666667" height="127.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="260" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="8aP-2K-8lJ" secondAttribute="height" multiplier="1:1" id="P1b-RV-edS"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
-                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-71-aNo">
-                                <rect key="frame" x="127.66666666666669" y="603.33333333333337" width="138" height="46"/>
+                                <rect key="frame" x="137.5" y="556" width="100" height="46"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="0DJ-bp-hiA"/>
-                                    <constraint firstAttribute="width" secondItem="Ebl-71-aNo" secondAttribute="height" multiplier="3:1" id="Z07-tn-RPL"/>
+                                    <constraint firstAttribute="width" secondItem="Ebl-71-aNo" secondAttribute="height" multiplier="50:23" id="vML-6y-dFy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -63,11 +56,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" propertyAccessControl="none"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QMy-38-u2a" secondAttribute="bottom" multiplier="1.6" id="asn-Xc-mlK"/>
-                            <constraint firstItem="QMy-38-u2a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9e-ID-55J"/>
-                            <constraint firstItem="QMy-38-u2a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gtB-qA-kfp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ebl-71-aNo" secondAttribute="bottom" multiplier="1.26" id="oCz-mB-R9a"/>
-                            <constraint firstItem="Ebl-71-aNo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xmp-yN-3ZA"/>
+                            <constraint firstItem="sZX-SC-nSw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="1EL-Pw-Vae"/>
+                            <constraint firstItem="sZX-SC-nSw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.53973" id="OCZ-oc-EvC"/>
+                            <constraint firstItem="Ebl-71-aNo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eMA-ID-6aG"/>
+                            <constraint firstItem="sZX-SC-nSw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gKz-3T-ncm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ebl-71-aNo" secondAttribute="bottom" constant="65" id="ndq-8W-A8I"/>
                         </constraints>
                     </view>
                     <connections>
